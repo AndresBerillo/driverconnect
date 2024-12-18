@@ -75,7 +75,6 @@
                 android:padding="12dp"
                 android:textColor="@color/primary_dark"
                 android:textColorHint="@color/secondary_text" />
-
             <!-- Selector de Choferes -->
             <Spinner
                 android:id="@+id/driverSelectorSpinner"
