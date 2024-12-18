@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colores Primarios -->
+    <color name="primary_color">#1E88E5</color> <!-- Azul brillante -->
+    <color name="secondary_color">#FFA726</color> <!-- Naranja -->
+    <color name="alert_color">#EF5350</color> <!-- Rojo -->
+    <color name="background_color">#FFFFFF</color> <!-- Blanco -->
+    <color name="primary_variant_color">#1565C0</color> <!-- Azul más oscuro -->
+    <color name="secondary_variant_color">#FB8C00</color> <!-- Naranja oscuro -->
+
+    <!-- Colores de Texto -->
+    <color name="text_color">#212121</color> <!-- Gris oscuro -->
+    <color name="hint_text_color">#757575</color> <!-- Gris claro -->
+    <color name="button_text_color">#FFFFFF</color> <!-- Blanco -->
+    <color name="black">#000000</color>
+    <color name="background_light">#e2e7d2</color>
+    <color name="primary_dark">#191737</color>
+    <color name="secondary_light">#c7c4b1</color>
+    <color name="text_dark">#45818f</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary_button">#45818f</color>
+    <color name="alert_button">#d1415c</color>
+    <color name="secondary_text">#45818f</color>
+</resources>

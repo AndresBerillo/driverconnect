@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_radial_background"
+    android:padding="16dp">
+
+    <!-- Icono centrado de edición -->
+    <ImageView
+        android:id="@+id/editDriverIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_steering_wheel"
+        android:contentDescription="Editar Chofer"
+        android:layout_marginBottom="16dp"
+        android:elevation="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- CardView para los campos de edición -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/editDriverCard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/editDriverIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Campo para Nombre del Chofer -->
+            <EditText
+                android:id="@+id/driverNameInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Chofer"
+                android:drawableStart="@drawable/ic_users"
+                android:background="@drawable/edittext_shadow"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Campo para Teléfono del Chofer -->
+            <EditText
+                android:id="@+id/driverPhoneInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Teléfono del Chofer"
+                android:drawableStart="@drawable/ic_phone"
+                android:background="@drawable/edittext_shadow"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="16sp"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Campo para Estado del Chofer -->
+            <Spinner
+                android:id="@+id/driverStatusSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_shadow"
+                android:padding="12dp"
+                android:layout_marginBottom="16dp"
+                android:entries="@array/driver_status_array" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Botón para Guardar Cambios -->
+    <Button
+        android:id="@+id/saveChangesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Guardar Cambios"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:background="@drawable/button_primary_with_ripple"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/editDriverCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:backgroundTint="@null"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
